@@ -1,20 +1,19 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import static java.lang.System.out;
 
 /**
  * Created by liuzhe on 2019/2/17.
  */
+//支持xml
 public class testNGTest001 {
 
     WebDriver driver = null;
 
-    //@BeforeMethod
-    @BeforeClass
+    @BeforeMethod
+    //@BeforeClass
     private void setup(){
         //启动chrome浏览器
         driver = new ChromeDriver();
@@ -36,8 +35,8 @@ public class testNGTest001 {
     }
 
 
-    //@AfterMethod
-    @AfterClass
+    @AfterMethod
+    //@AfterClass
     private void teardown(){
         driver.quit();
         out.println("关闭浏览器001");

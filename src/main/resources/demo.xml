@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="myPlan" >
-    <test name="Test">
+    <test name="Test"  parallel= "false" thread-count="2">
+
         <classes>
             <class name="testNGTest001"/>
             <class name="testNGTest002"/>
