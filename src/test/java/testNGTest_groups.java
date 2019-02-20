@@ -10,7 +10,7 @@ import static java.lang.System.out;
  * Created by liuzhe on 2019/2/17.
  */
 //支持groups
-public class testNGtest_groups {
+public class testNGTest_groups {
 
     WebDriver driver = null;
 

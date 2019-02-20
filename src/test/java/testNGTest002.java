@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 
 import static java.lang.System.out;
@@ -25,12 +26,14 @@ public class testNGTest002 {
         //在浏览器输入地址
         driver.get("https://account.baobaobooks.com/");
         out.println("进入登录页面002");
+        Reporter.log("进入登录页面002");
     }
     @Test
     private void test2() {
         //在浏览器输入地址
         driver.get("https://fxm5547.baobaobooks.com/");
         out.println("进入首页002");
+        Reporter.log("进入首页002");
     }
 
 
