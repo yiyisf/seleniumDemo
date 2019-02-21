@@ -20,7 +20,6 @@ import java.util.List;
 public class testNGTest_ReadExcel {
     @DataProvider
     public Object[][] getData(){
-        //String path  = this.getClass().getResource("data.xlsx").getPath();
         String path  = this.getClass().getResource("data.xlsx").getPath();
         System.out.println(path);
         return getDataFromExcel(path);
@@ -35,6 +34,9 @@ public class testNGTest_ReadExcel {
 
 
     public Object[][] getDataFromExcel(String excelPath) {
+        //HSSFWorkbook针对xls，XSSFWorkbook针对xlsx；
+        //XSSFWorkbook、XSSFSheet、XSSFRow、XSSFCell为2007+版本对应的处理实现类；
+        //HSSFWorkbook、HSSFSheet、HSSFRow、HSSFCell为97-2003版本对应的处理实现类；
         Workbook workbook;
         try {
             FileInputStream excelInputStream = new FileInputStream(excelPath);
