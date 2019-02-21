@@ -1,10 +1,10 @@
-import javafx.scene.control.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,7 +20,8 @@ import java.util.List;
 public class testNGTest_ReadExcel {
     @DataProvider
     public Object[][] getData(){
-        String path  = this.getClass().getResource("data.numbers").getPath();
+        //String path  = this.getClass().getResource("data.xlsx").getPath();
+        String path  = this.getClass().getResource("data.xlsx").getPath();
         System.out.println(path);
         return getDataFromExcel(path);
 
