@@ -28,41 +28,10 @@ public class BaseTest之CSSLocation {
         //在浏览器输入地址
         driver.get("https://account.baobaobooks.com/");
 
-        //输入用户名、密码，登录
-//        By username = By.id("username");
-//        WebElement username_element = driver.findElement(username);
-//        username_element.click();
-//        username_element.sendKeys("13428750583");
-
-        //通过id进行定位
-//        driver.findElement(By.id("username")).click();
-//        driver.findElement(By.id("username")).sendKeys("13428750583");
 
         //通过class进行定位
         driver.findElement(By.className("login-input")).click();
         driver.findElement(By.className("login-input")).sendKeys("13428750583");
-
-        //通过input定位 (http://news.baidu.com/)
-//        driver.findElement(By.tagName("input")).click();
-
-
-        //thread.sleep(5000);
-
-        By password = By.id("password");
-        WebElement password_element = driver.findElement(password);
-        password_element.click();
-        password_element.sendKeys("a123456");
-        //thread.sleep(5000);
-
-        By login = By.className("login-btn");
-        WebElement login_element = driver.findElement(login);
-        login_element.click();
-
-
-
-
-
-
 
 
         out.println("passed!");

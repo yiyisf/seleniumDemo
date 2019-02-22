@@ -10,7 +10,7 @@ import static java.lang.System.out;
 
 /**
  * Created by liuzhe on 2019/2/17.
- * 基本定位方法
+ * 基本定位方法-xpath定位
  */
 public class BaseTest之XpathLocation {
 
@@ -26,44 +26,12 @@ public class BaseTest之XpathLocation {
     @Test
     private void test(){
         //在浏览器输入地址
-        driver.get("https://account.baobaobooks.com/");
-
-        //输入用户名、密码，登录
-//        By username = By.id("username");
-//        WebElement username_element = driver.findElement(username);
-//        username_element.click();
-//        username_element.sendKeys("13428750583");
-
-        //通过id进行定位
-//        driver.findElement(By.id("username")).click();
-//        driver.findElement(By.id("username")).sendKeys("13428750583");
-
-        //通过class进行定位
-        driver.findElement(By.className("login-input")).click();
-        driver.findElement(By.className("login-input")).sendKeys("13428750583");
-
-        //通过input定位 (http://news.baidu.com/)
-//        driver.findElement(By.tagName("input")).click();
+        driver.get("https://testerhome.com/account/sign_in");
 
 
-        //thread.sleep(5000);
-
-        By password = By.id("password");
-        WebElement password_element = driver.findElement(password);
-        password_element.click();
-        password_element.sendKeys("a123456");
-        //thread.sleep(5000);
-
-        By login = By.className("login-btn");
-        WebElement login_element = driver.findElement(login);
-        login_element.click();
-
-
-
-
-
-
-
+        //通过xpath进行定位
+        driver.findElement(By.xpath("//input[@type=\"email\"]")).click();
+        driver.findElement(By.xpath("//input[@type=\"email\"]")).sendKeys("13428750583");
 
         out.println("passed!");
     }
