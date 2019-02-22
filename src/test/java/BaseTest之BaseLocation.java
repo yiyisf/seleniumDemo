@@ -6,12 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 /**
  * Created by liuzhe on 2019/2/17.
+ * 基本定位方法
  */
-public class TongashuguanTest {
+public class BaseTest之BaseLocation {
 
     WebDriver driver = null;
 
@@ -33,8 +34,17 @@ public class TongashuguanTest {
 //        username_element.click();
 //        username_element.sendKeys("13428750583");
 
-        driver.findElement(By.id("username")).click();
-        driver.findElement(By.id("username")).sendKeys("13428750583");
+        //通过id进行定位
+//        driver.findElement(By.id("username")).click();
+//        driver.findElement(By.id("username")).sendKeys("13428750583");
+
+        //通过class进行定位
+        driver.findElement(By.className("login-input")).click();
+        driver.findElement(By.className("login-input")).sendKeys("13428750583");
+
+        //通过input定位 (http://news.baidu.com/)
+//        driver.findElement(By.tagName("input")).click();
+
 
         //thread.sleep(5000);
 
