@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static java.lang.System.out;
+import static org.openqa.selenium.By.cssSelector;
 
 /**
  * Created by liuzhe on 2019/2/17.
@@ -29,10 +30,10 @@ public class BaseTest之CSSLocation {
         driver.get("https://account.baobaobooks.com/");
 
 
-        //通过class进行定位
-        driver.findElement(By.className("login-input")).click();
-        driver.findElement(By.className("login-input")).sendKeys("13428750583");
+        //通过css进行定位
+        //driver.findElement(cssSelector(".login-input username")).sendKeys("13428750583");
 
+        driver.findElement(cssSelector("#username")).sendKeys("13428750583");
 
         out.println("passed!");
     }

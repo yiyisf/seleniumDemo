@@ -14,16 +14,16 @@
       <![CDATA[点击登录]]>
     </line>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="5858" started-at="2019-02-21T14:50:06Z" finished-at="2019-02-21T14:50:12Z">
+  <suite name="Default Suite" duration-ms="7795" started-at="2019-02-21T15:29:18Z" finished-at="2019-02-21T15:29:26Z">
     <groups>
     </groups>
-    <test name="seleniumDemo" duration-ms="5858" started-at="2019-02-21T14:50:06Z" finished-at="2019-02-21T14:50:12Z">
+    <test name="seleniumDemo" duration-ms="7795" started-at="2019-02-21T15:29:18Z" finished-at="2019-02-21T15:29:26Z">
       <class name="LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginTest@511baa65]" name="setup" is-config="true" duration-ms="2657" started-at="2019-02-21T14:50:06Z" finished-at="2019-02-21T14:50:08Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginTest@511baa65]" name="setup" is-config="true" duration-ms="3193" started-at="2019-02-21T15:29:18Z" finished-at="2019-02-21T15:29:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test()[pri:0, instance:LoginTest@511baa65]" name="test" duration-ms="2993" started-at="2019-02-21T14:50:08Z" finished-at="2019-02-21T14:50:11Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:LoginTest@511baa65]" name="test" duration-ms="4443" started-at="2019-02-21T15:29:22Z" finished-at="2019-02-21T15:29:26Z">
           <reporter-output>
             <line>
               <![CDATA[点击登录链接]]>
@@ -39,7 +39,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginTest@511baa65]" name="teardown" is-config="true" duration-ms="171" started-at="2019-02-21T14:50:11Z" finished-at="2019-02-21T14:50:12Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginTest@511baa65]" name="teardown" is-config="true" duration-ms="105" started-at="2019-02-21T15:29:26Z" finished-at="2019-02-21T15:29:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
