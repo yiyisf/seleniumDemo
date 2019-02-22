@@ -11,7 +11,7 @@ import static java.lang.System.*;
 /**
  * Created by liuzhe on 2019/2/17.
  */
-public class DemoTest {
+public class TongashuguanTest {
 
     WebDriver driver = null;
 
