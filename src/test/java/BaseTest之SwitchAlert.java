@@ -10,9 +10,9 @@ import static java.lang.System.out;
 
 /**
  * Created by liuzhe on 2019/2/17.
- * 基本定位方法-name定位
+ * alert
  */
-public class BaseTest之name定位 {
+public class BaseTest之SwitchAlert {
 
     WebDriver driver = null;
 
@@ -25,12 +25,24 @@ public class BaseTest之name定位 {
 
     @Test
     private void test(){
-        //打开浏览器地址
-        driver.get("https://testerhome.com/account/sign_in");
+        //在浏览器输入地址
+        driver.get("https://account.baobaobooks.com/");
 
-        //通过name进行定位
-        driver.findElement(By.name("user[login]")).clear();
-        driver.findElement(By.name("user[login]")).sendKeys("13428750583");
+////      获取弹窗文本
+//        driver.switchTo().alert().getText();
+////      点击确定
+//        driver.switchTo().alert().accept();
+////      点击
+//        driver.switchTo().alert().dismiss();
+////      在弹窗中输入内容
+//        driver.switchTo().alert().sendKeys("12348750583");
+//
+//
+
+
+
+
+
 
         out.println("passed!");
     }

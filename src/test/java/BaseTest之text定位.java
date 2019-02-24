@@ -29,8 +29,18 @@ public class BaseTest之text定位 {
         driver.get("https://testerhome.com/topics");
 
         //通过linktext定位元素
-        driver.findElement(By.linkText("登录")).click();
-        out.println("passed!");
+       driver.findElement(By.linkText("登录")).click();
+
+        //通过getText获取标签内的文本
+//        String s = driver.findElement(By.linkText("登录")).getText();
+
+        //getTagName获取标签名字
+//        String s = driver.findElement(By.linkText("登录")).getTagName();
+
+        //getAttribute获取属性值
+//        String s = driver.findElement(By.linkText("登录")).getAttribute("name");
+
+//        out.println(s);
     }
 
 
