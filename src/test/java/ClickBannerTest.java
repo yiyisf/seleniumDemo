@@ -39,8 +39,6 @@ public class ClickBannerTest {
 
 
 
-
-
         out.println("passed!");
     }
 
