@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="1" preserve-order="true" name="/Users/liuzhe/Desktop/peixun/safari/seleniumDemo">
+        <!--<groups>-->
+        <!--<dependencies>-->
+        <!--<group name="" depends-on="">-->
+        <!--<classes>-->
+        <!--<class name="TestLogin.LoginTest">-->
+        <!--<methods>-->
+        <!--<include name="testLogin"></include>-->
+        <!--<parameter name="name" value="张三"/>-->
+        <!--<parameter name="password" value="123456"/>-->
+        <!--<parameter name="expect" value="欢迎张三"/>-->
+        <!--&lt;!&ndash;<exclude name=""></exclude>&ndash;&gt;-->
+        <!--</methods>-->
+        <!--</class>-->
+
+        <!--&lt;!&ndash;<class name="TestLogin.ShoppingTest"></class>&ndash;&gt;-->
+
+
+        <!--</classes>-->
+        <!--</group>-->
+
+        <!--</dependencies>-->
+        <!--</groups>-->
+
+        <classes>
+            <!--<class name="TestLogin.LoginTest">-->
+                <!--<methods>-->
+                    <!--<include name="testLogin"/>-->
+                    <!--<parameter name="name" value="张三"/>-->
+                    <!--<parameter name="password" value="123456"/>-->
+                    <!--<parameter name="expect" value="欢迎张三"/>-->
+                    <!--&lt;!&ndash;<exclude name=""></exclude>&ndash;&gt;-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="TestLogin.ShoppingsTest">-->
+
+            <!--</class>-->
+            <class name="testNGTest002">
+
+            </class>
+        </classes>
+
+
+        <!--<classes>-->
+            <!--<class name="TestLogin.LoginTest">-->
+                <!--<methods>-->
+                    <!--<include name="testLogin">-->
+                        <!--<parameter name="name" value="name"/>-->
+                        <!--<parameter name="password" value="password"/>-->
+                        <!--<parameter name="expect" value="expect"/>-->
+                    <!--</include>-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+
+
+    </test>
+</suite>
+
+
+        <!--<classes>-->
+        <!--<class name="DemoXunit.LoginTest">-->
+        <!--<methods>-->
+        <!--<include name="testLogin"/>-->
+        <!--</methods>-->
+        <!--</class>-->
+        <!--<class name="DemoXunit.ShoppingTest">-->
+        <!--<methods>-->
+        <!--<include name="testLogin"/>-->
+        <!--<include name="testLoginAndShopping"/>-->
+        <!--<include name="testDatas"/>-->
+        <!--</methods>-->
+        <!--</class>-->
+        <!--<class name="DemoXunit.ParamDataTest">-->
+        <!--<methods>-->
+        <!--<parameter name="aa" value="AA"/>-->
+        <!--<parameter name="bb" value="BB"/>-->
+        <!--<include name="testParams"/>-->
+        <!--</methods>-->
+        <!--</class>-->
+        <!--</classes>-->

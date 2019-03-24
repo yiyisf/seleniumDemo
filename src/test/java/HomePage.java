@@ -12,6 +12,7 @@ public class HomePage {
     @FindBy(partialLinkText = "登录")
     WebElement LinkLogin;
 
+//    初始化po
     public HomePage(WebDriver driver){
         PageFactory.initElements(driver,this);
     }

@@ -11,6 +11,12 @@
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.10.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
@@ -38,14 +44,38 @@
             <version>2.5</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>AutoIt</groupId>
-            <artifactId>AutoItX4Java</artifactId>
-            <version>1.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>AutoIt</groupId>-->
+            <!--<artifactId>AutoItX4Java</artifactId>-->
+            <!--<version>1.1</version>-->
+        <!--</dependency>-->
 
 
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!--<parallel>methods</parallel>-->
+                    <!--<threadCount>2</threadCount>-->
+                </configuration>
+            </plugin>
+            <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-compiler-plugin</artifactId>-->
+            <!--<configuration>-->
+            <!--<source>1.6</source>-->
+            <!--<target>1.6</target>-->
+            <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
 
 
 </project>
