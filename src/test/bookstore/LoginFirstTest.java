@@ -95,7 +95,7 @@ public class LoginFirstTest {
 //        loginFirstPage.inputUserName("13428750583");
 //        loginFirstPage.inputPassword("a123456");
         loginFirstPage.loginButton();
-//        System.out.printf(driver.getTitle());
+        System.out.printf(driver.getTitle());
         Assert.assertEquals(driver.getTitle(),"孩宝小镇 - 登录");
         Thread.sleep(3000);
 

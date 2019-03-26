@@ -35,12 +35,13 @@ public class NavinationBar {
 
     //    参数化
 
-    //   点击按钮
+    //   点击登录按钮
     public void clickButton1() {
         my_webElement.click();
         Reporter.log("点击登录button", true);
 
     }
+//      注册或登录后即可继续操作按钮
     public void clickButton2() {
         title_element.click();
         Reporter.log("注册或登录后即可继续操作button", true);
