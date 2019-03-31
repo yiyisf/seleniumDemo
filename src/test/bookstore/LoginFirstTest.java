@@ -110,7 +110,7 @@ public class LoginFirstTest {
 //        out.println("\n进入首页passed!");
 //
 ////        点击banner
-//        By banner = By.className("swiper-lazy banner-img swiper-lazy-loaded");
+//        By banner = By.className("swiper-container swiper-container-horizontal");
 //        WebElement banner_webElement = driver.findElement(banner);
 //        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(banner_webElement));
 //        banner_webElement.click();
