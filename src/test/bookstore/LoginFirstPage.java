@@ -54,4 +54,19 @@ public class LoginFirstPage {
 
 
 
+//    banner
+
+    //    查找banner-元素
+    @FindBy(xpath = "//*[@class='swiper-container swiper-container-horizontal']")
+    WebElement banner_webElement;
+    public void bannerClick(){
+        banner_webElement.click();
+        Reporter.log("点击banner图片",true);
+
+    }
+
+
+
+
+
 }

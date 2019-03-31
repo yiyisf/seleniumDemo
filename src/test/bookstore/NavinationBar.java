@@ -21,7 +21,7 @@ public class NavinationBar {
     WebElement category_webElement;
 
     @FindBy(className = "icon icon-footer1")
-    WebElement fristpage_webElement;
+    WebElement navinationBar;
 
     @FindBy(xpath = "//*[@class='btn']")
     WebElement title_element;
@@ -46,6 +46,28 @@ public class NavinationBar {
         title_element.click();
         Reporter.log("注册或登录后即可继续操作button", true);
     }
+
+    //   点击首页按钮
+    public void clickButton3() {
+        navinationBar.click();
+        Reporter.log("点击首页button", true);
+
+    }
+
+    //   点击分类按钮
+    public void clickButton4() {
+        navinationBar.click();
+        Reporter.log("点击分类button", true);
+
+    }
+
+    //   点击购物车按钮
+    public void clickButton5() {
+        navinationBar.click();
+        Reporter.log("点击购物车button", true);
+
+    }
+
 
 
 }

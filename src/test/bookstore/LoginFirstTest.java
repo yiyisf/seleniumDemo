@@ -3,6 +3,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,6 +31,7 @@ public class LoginFirstTest {
     @Test
     private void test() throws InterruptedException {
         //在浏览器输入地址
+
 
         driver.get("https://fxm5547.baobaobooks.com/");
         System.out.printf(driver.getTitle());
@@ -101,6 +103,45 @@ public class LoginFirstTest {
 
 
         out.println("\npassed!");
+
+////      点击首页
+//        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(navinationBar.navinationBar));
+//        navinationBar.clickButton3();
+//        out.println("\n进入首页passed!");
+//
+////        点击banner
+//        By banner = By.className("swiper-lazy banner-img swiper-lazy-loaded");
+//        WebElement banner_webElement = driver.findElement(banner);
+//        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(banner_webElement));
+//        banner_webElement.click();
+//        out.println("\n进入banner详情页passed!");
+//
+//        点击banner
+        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.banner_webElement));
+        Reporter.log("点击banner");
+        loginFirstPage.bannerClick();
+
+
+//        结果页面title比较
+        BannerDetailPage bannerDetailPage = new BannerDetailPage(driver);
+
+        WebDriverWait wait = new WebDriverWait(driver, 60);
+        wait.until(ExpectedConditions.titleContains("书单详情"));
+//        String Actual_title ="书单详情";
+//        String Expect_title = bannerDetailPage.getpageTitle();
+//        System.out.printf(Expect_title);
+//        Assert.assertTrue(("Expect_title:" + Expect_title).equals("Actual_title：" + Actual_title));
+        Reporter.log("进入banner详情页面成功");
+
+
+
+
+
+
+
+
+
+
     }
 
 
