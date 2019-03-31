@@ -1,0 +1,93 @@
+{
+  "uid" : "bd478d40b618e253",
+  "name" : "test1",
+  "fullName" : "BaseTest之cookieTest.test1",
+  "historyId" : "6a2ee4a89b929bb9605ff2d752c342dd",
+  "time" : {
+    "start" : 1553402263912,
+    "stop" : 1553402265369,
+    "duration" : 1457
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1553402262524,
+      "stop" : 1553402263909,
+      "duration" : 1385
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1553402265371,
+      "stop" : 1553402265537,
+      "duration" : 166
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "BaseTest之cookieTest"
+  }, {
+    "name" : "testClass",
+    "value" : "BaseTest之cookieTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "test1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Command line suite"
+  }, {
+    "name" : "suite",
+    "value" : "Command line test"
+  }, {
+    "name" : "subSuite",
+    "value" : "BaseTest之cookieTest"
+  }, {
+    "name" : "host",
+    "value" : "bogon"
+  }, {
+    "name" : "thread",
+    "value" : "63045@bogon.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bd478d40b618e253.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "64f954aa17041230",
+  "name" : "test2",
+  "fullName" : "testNGTest.test2",
+  "historyId" : "5df3311cdd9b4b8aa9b413ca7e4bf49c",
+  "time" : {
+    "start" : 1553402234496,
+    "stop" : 1553402238600,
+    "duration" : 4104
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1553402231432,
+      "stop" : 1553402233043,
+      "duration" : 1611
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1553402238602,
+      "stop" : 1553402238846,
+      "duration" : 244
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testNGTest"
+  }, {
+    "name" : "testClass",
+    "value" : "testNGTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "test2"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Command line suite"
+  }, {
+    "name" : "suite",
+    "value" : "Command line test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testNGTest"
+  }, {
+    "name" : "host",
+    "value" : "bogon"
+  }, {
+    "name" : "thread",
+    "value" : "63045@bogon.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "64f954aa17041230.json",
+  "parameterValues" : [ ]
+}

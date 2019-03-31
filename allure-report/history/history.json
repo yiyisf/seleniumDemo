@@ -1,0 +1,234 @@
+{
+  "e5fbecaa0e26269f55bbe1529f3b84b7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9d1e093204a33d6d",
+      "status" : "broken",
+      "statusDetails" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=72.0.3626.121)\n  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'\nSystem info: host: 'bogon', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_112'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/h3/9371xns54rq...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63568}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}\nSession ID: 7fdb45f4a0abfe3c6b7bdc0f3f64bad9\n*** Element info: {Using=xpath, value=//*[@class=\"content hidden-mobile\"]/a/img}",
+      "time" : {
+        "start" : 1553402221503,
+        "stop" : 1553402231202,
+        "duration" : 9699
+      }
+    } ]
+  },
+  "48a2605aec121bb3730fe520eadc36fb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "51fb6026545f95a5",
+      "status" : "broken",
+      "statusDetails" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=72.0.3626.121)\n  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'\nSystem info: host: 'bogon', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_112'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/h3/9371xns54rq...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63711}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}\nSession ID: 77e26c0464c235a9e0752e20bbaa7ea3\n*** Element info: {Using=xpath, value=//*[@class=\"form-control\"]}",
+      "time" : {
+        "start" : 1553402246557,
+        "stop" : 1553402251374,
+        "duration" : 4817
+      }
+    } ]
+  },
+  "8fc26d1e693590abe87ff290391d4d21" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bfa37fc1abb462ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402243587,
+        "stop" : 1553402244934,
+        "duration" : 1347
+      }
+    } ]
+  },
+  "81790d63a867617722163172f378c097" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "16e8938af5b16a70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402217506,
+        "stop" : 1553402219242,
+        "duration" : 1736
+      }
+    } ]
+  },
+  "22dc2681783a0fa0ee59a1c6b62625fa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60a3fc2cba764241",
+      "status" : "broken",
+      "statusDetails" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=72.0.3626.121)\n  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'\nSystem info: host: 'bogon', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_112'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/h3/9371xns54rq...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63773}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}\nSession ID: cf1aa6bf56bdbf00e4ee6b91554862cf\n*** Element info: {Using=partial link text, value=登录}",
+      "time" : {
+        "start" : 1553402255669,
+        "stop" : 1553402259741,
+        "duration" : 4072
+      }
+    } ]
+  },
+  "e3cc4d260a2eb962a9e1c2c1abe78755" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b9730ca629428af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402252272,
+        "stop" : 1553402254249,
+        "duration" : 1977
+      }
+    } ]
+  },
+  "6a2ee4a89b929bb9605ff2d752c342dd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bd478d40b618e253",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402263912,
+        "stop" : 1553402265369,
+        "duration" : 1457
+      }
+    } ]
+  },
+  "b14afb164c2ca931130fd4aa8cdcb19a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3bae52d8f467c692",
+      "status" : "broken",
+      "statusDetails" : "Key Down / Up events only make sense for modifier keys.",
+      "time" : {
+        "start" : 1553402240532,
+        "stop" : 1553402241727,
+        "duration" : 1195
+      }
+    } ]
+  },
+  "24017b1a20a523a0a86e5317c7332321" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9cf7138ec993ff31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402267019,
+        "stop" : 1553402268311,
+        "duration" : 1292
+      }
+    } ]
+  },
+  "5df3311cdd9b4b8aa9b413ca7e4bf49c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64f954aa17041230",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402234496,
+        "stop" : 1553402238600,
+        "duration" : 4104
+      }
+    } ]
+  },
+  "b9dc48e0123a962f94a4e12160b043a7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8accf52f18b3bd28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402233052,
+        "stop" : 1553402234493,
+        "duration" : 1441
+      }
+    } ]
+  },
+  "e377288f3e4a5b652eb454c4273f8f86" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bf4529a18631ee87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1553402261261,
+        "stop" : 1553402262423,
+        "duration" : 1162
+      }
+    } ]
+  }
+}
