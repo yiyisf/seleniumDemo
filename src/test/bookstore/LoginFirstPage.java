@@ -52,7 +52,16 @@ public class LoginFirstPage {
     }
 
 
+//    搜索
 
+    //    查找搜索-元素
+    @FindBy(xpath = "//input[@class='search']")
+    WebElement search_webElement;
+    public void searchClick(){
+        search_webElement.click();
+        Reporter.log("点击搜索框",true);
+
+    }
 
 //    banner
 
