@@ -10,23 +10,23 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
 import static java.lang.System.out;
 
 /**
  * Created by liuzhe on 2019/3/24.
+ * 登录
+ * 搜索
+ * 点击banner
  */
 
 
 public class LoginFirstTest {
 
 
-
     WebDriver driver = null;
 
     @BeforeMethod
-    private void setup(){
+    private void setup() {
         //启动chrome浏览器
         driver = new ChromeDriver();
 
@@ -39,9 +39,9 @@ public class LoginFirstTest {
 
         driver.get("https://fxm5547.baobaobooks.com/");
         System.out.printf(driver.getTitle());
-        if (driver.getTitle().equals("小明fxm5547")){
+        if (driver.getTitle().equals("小明fxm5547")) {
             System.out.printf("\n进入网站成功\n");
-        }else {
+        } else {
             System.out.printf("\n进入网站失败\n");
         }
 
@@ -97,12 +97,12 @@ public class LoginFirstTest {
         new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.logins_webElement));
         new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.userName_webElement));
         new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.passWord_webElement));
-        loginFirstPage.business("13428750583","a123456");
+        loginFirstPage.business("13428750583", "a123456");
 //        loginFirstPage.inputUserName("13428750583");
 //        loginFirstPage.inputPassword("a123456");
         loginFirstPage.loginButton();
         System.out.printf(driver.getTitle());
-        Assert.assertEquals(driver.getTitle(),"孩宝小镇 - 登录");
+        Assert.assertEquals(driver.getTitle(), "孩宝小镇 - 登录");
         Thread.sleep(3000);
 
 
@@ -120,64 +120,63 @@ public class LoginFirstTest {
         WebElement Expect_title_webElement = driver.findElement(Expect);
         WebDriverWait wait = new WebDriverWait(driver, 60);
         String Expect_title = wait.until(ExpectedConditions.visibilityOf(Expect_title_webElement)).getText();
-        System.out.printf(Expect_title+"\n");
+        System.out.printf(Expect_title + "\n");
 
+//      判断页面是否存在预期元素：热门搜索
         String Actual_title = "热门搜索";
         System.out.printf(Actual_title);
-        Assert.assertEquals(Expect_title,Actual_title);
-        Reporter.log("\n进入搜索页面");
+        Assert.assertEquals(Expect_title, Actual_title);
 
-        String book_name_keyword=null;
-
-        SearchPage searchPage =new SearchPage(driver);
+//      输入搜索内容
+        String book_name_keyword = null;
+        SearchPage searchPage = new SearchPage(driver);
         book_name_keyword = "鹅妈妈";
         searchPage.inputSearchContent(book_name_keyword);
-        searchPage.SearchButton(book_name_keyword);
-        System.out.printf("11111");
-        Reporter.log("\n进入搜索结果页");
+        searchPage.SearchButton();
+        System.out.printf("进入搜索结果页面\n");
 
-        SearchResultPage searchResultPage = new SearchResultPage(driver);
-        List<String> strings = searchResultPage.SearchResultPage();
-        System.out.printf(String.valueOf(strings));
+        Thread.sleep(3000);
+//      找到搜索结果中元素对应的文本
+        By Expect_book = By.xpath("//*[@class='desc']");
+        WebElement Expect_book_name_webElement = driver.findElement(Expect_book);
+        WebDriverWait waits = new WebDriverWait(driver, 600);
+        String Expect_book_name = wait.until(ExpectedConditions.visibilityOf(Expect_book_name_webElement)).getText();
+        System.out.printf(Expect_book_name + "\n");
 
+//      判断搜索结果中是否包含搜索内容：鹅妈妈
+        Assert.assertTrue(Expect_book_name.contains(book_name_keyword), "测试失败");
+        System.out.printf("搜索passed\n");
 
-
-
-        Assert.assertTrue((strings.contains("鹅妈妈")));
-//        Assert.assertEquals(book_name_keyword,book_names.contains("鹅妈妈"));
-
-
-////        点击banner
-//        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.banner_webElement));
-//        Reporter.log("点击banner");
-//        loginFirstPage.bannerClick();
-//
-//
-////        结果页面title比较
-//        BannerDetailPage bannerDetailPage = new BannerDetailPage(driver);
-//
-//        WebDriverWait wait = new WebDriverWait(driver, 60);
-//        wait.until(ExpectedConditions.titleContains("书单详情"));
-////        String Actual_title ="书单详情";
-////        String Expect_title = bannerDetailPage.getpageTitle();
-////        System.out.printf(Expect_title);
-////        Assert.assertTrue(("Expect_title:" + Expect_title).equals("Actual_title：" + Actual_title));
-//        Reporter.log("进入banner详情页面成功");
-//
+//      进入首页
+        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(navinationBar.Firstpage_webElement));
+        navinationBar.clickButton3();
+        System.out.printf("进入首页\n");
 
 
+//        点击banner
+        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.banner_webElement));
+        System.out.printf("点击banner\n");
+        loginFirstPage.bannerClick();
 
 
+//        结果页面title比较
+        BannerDetailPage bannerDetailPage = new BannerDetailPage(driver);
 
-
-
+        WebDriverWait wait1 = new WebDriverWait(driver, 60);
+        wait1.until(ExpectedConditions.titleContains("书单详情"));
+//        String Actual_title ="书单详情";
+//        String Expect_title = bannerDetailPage.getpageTitle();
+//        System.out.printf(Expect_title);
+//        Assert.assertTrue(("Expect_title:" + Expect_title).equals("Actual_title：" + Actual_title));
+        System.out.printf("进入banner详情页");
+        Thread.sleep(3000);
 
 
     }
 
 
     @AfterMethod
-    private void teardown(){
+    private void teardown() {
         driver.quit();
     }
 

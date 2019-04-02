@@ -14,18 +14,17 @@ public class NavinationBar {
     @FindBy(xpath = "//*[@class='icon icon-footer4']")
     WebElement my_webElement;
 
-    @FindBy(className = "icon icon-footer3")
+    @FindBy(xpath = "//*[@class='icon icon-footer3']")
     WebElement cart_webElement;
 
-    @FindBy(className = "icon icon-footer2")
+    @FindBy(xpath = "//*[@class='icon icon-footer2']")
     WebElement category_webElement;
 
-    @FindBy(className = "icon icon-footer1")
-    WebElement navinationBar;
+    @FindBy(xpath = "//*[@class='icon icon-footer1']")
+    WebElement Firstpage_webElement;
 
     @FindBy(xpath = "//*[@class='btn']")
     WebElement title_element;
-
 
 
     //  初始化PO
@@ -41,7 +40,8 @@ public class NavinationBar {
         Reporter.log("点击登录button", true);
 
     }
-//      注册或登录后即可继续操作按钮
+
+    //      注册或登录后即可继续操作按钮
     public void clickButton2() {
         title_element.click();
         Reporter.log("注册或登录后即可继续操作button", true);
@@ -49,25 +49,24 @@ public class NavinationBar {
 
     //   点击首页按钮
     public void clickButton3() {
-        navinationBar.click();
+        Firstpage_webElement.click();
         Reporter.log("点击首页button", true);
 
     }
 
     //   点击分类按钮
     public void clickButton4() {
-        navinationBar.click();
+        category_webElement.click();
         Reporter.log("点击分类button", true);
 
     }
 
     //   点击购物车按钮
     public void clickButton5() {
-        navinationBar.click();
+        cart_webElement.click();
         Reporter.log("点击购物车button", true);
 
     }
-
 
 
 }
