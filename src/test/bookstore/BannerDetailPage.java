@@ -1,5 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Created by liuzhe on 2019/3/31.
@@ -14,8 +16,9 @@ public class BannerDetailPage {
         PageFactory.initElements(driver, this);
     }
 
-    public String getpageTitle() {
-        return driver.getTitle();
+    public void waitTitleContent(long time,String part_title) {
+        WebDriverWait wait = new WebDriverWait(driver, time);
+        wait.until(ExpectedConditions.titleContains(part_title));
 
     }
 }

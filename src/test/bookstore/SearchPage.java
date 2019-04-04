@@ -9,12 +9,19 @@ import org.testng.Reporter;
  */
 public class SearchPage {
 
+//   @DataProvider
+//   public Object[][] getData(){
+//       Object[][] o={{"鹅妈妈"},{"小猪"}};
+//       return o;
+//
+//   }
+
     //    查找页面元素-搜索框
     //    查找页面元素-搜索按钮
 
     @FindBy(xpath = "//*[@class='search']")
     WebElement search_webElement;
-
+//    @Test (dataProvider = "getData")
     public void inputSearchContent(String content) {
         search_webElement.clear();
         search_webElement.sendKeys(content);
@@ -33,11 +40,22 @@ public class SearchPage {
     }
 
     //    搜索按钮
+    public SearchResultPage gotoSearchResult(String content) {
+        inputSearchContent(content);
+        searchButton_webElement.click();
+        Reporter.log("//点击搜索按钮\n", true);
+        return new SearchResultPage(driver);
+
+    }
+
+    //    搜索按钮
     public void SearchButton() {
         searchButton_webElement.click();
         Reporter.log("//点击搜索按钮\n", true);
 
     }
+
+
 
 
     //    搜索关键字

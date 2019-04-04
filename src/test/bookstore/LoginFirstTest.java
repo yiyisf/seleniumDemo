@@ -10,6 +10,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static java.lang.System.out;
 
 /**
@@ -127,6 +130,11 @@ public class LoginFirstTest {
         System.out.printf(Actual_title);
         Assert.assertEquals(Expect_title, Actual_title);
 
+
+
+
+
+
 //      输入搜索内容
         String book_name_keyword = null;
         SearchPage searchPage = new SearchPage(driver);
@@ -147,13 +155,15 @@ public class LoginFirstTest {
         Assert.assertTrue(Expect_book_name.contains(book_name_keyword), "测试失败");
         System.out.printf("搜索passed\n");
 
+
+
 //      进入首页
         new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(navinationBar.Firstpage_webElement));
         navinationBar.clickButton3();
         System.out.printf("进入首页\n");
 
 
-//        点击banner
+//      点击banner
         new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(loginFirstPage.banner_webElement));
         System.out.printf("点击banner\n");
         loginFirstPage.bannerClick();
@@ -161,15 +171,16 @@ public class LoginFirstTest {
 
 //        结果页面title比较
         BannerDetailPage bannerDetailPage = new BannerDetailPage(driver);
+        bannerDetailPage.waitTitleContent(3000,"书单详情");
 
-        WebDriverWait wait1 = new WebDriverWait(driver, 60);
-        wait1.until(ExpectedConditions.titleContains("书单详情"));
-//        String Actual_title ="书单详情";
-//        String Expect_title = bannerDetailPage.getpageTitle();
-//        System.out.printf(Expect_title);
-//        Assert.assertTrue(("Expect_title:" + Expect_title).equals("Actual_title：" + Actual_title));
-        System.out.printf("进入banner详情页");
-        Thread.sleep(3000);
+//        WebDriverWait wait1 = new WebDriverWait(driver, 60);
+//        wait1.until(ExpectedConditions.titleContains("书单详情"));
+////        String Actual_title ="书单详情";
+////        String Expect_title = bannerDetailPage.getpageTitle();
+////        System.out.printf(Expect_title);
+////        Assert.assertTrue(("Expect_title:" + Expect_title).equals("Actual_title：" + Actual_title));
+//        System.out.printf("进入banner详情页");
+//        Thread.sleep(3000);
 
 
     }
