@@ -1,5 +1,3 @@
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVRecord;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -7,12 +5,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.FileReader;
-import java.io.Reader;
 import java.net.URLDecoder;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * Created by liuzhe on 2019/4/4.
@@ -33,7 +27,7 @@ public class SearchProviderTest {
     public Iterator<Object[]> getData() throws Exception {
         String path = SearchProviderTest.class.getResource("/searchdata.csv").getPath();
         path = URLDecoder.decode(path,"utf-8");
-        return readCsvFile(path);
+        return fileUtils.readCsvFile(path);
     }
 
 
@@ -44,6 +38,7 @@ public class SearchProviderTest {
 
 
         driver.get("https://fxm5547.baobaobooks.com/");
+
 
 
         LoginFirstPage loginFirstPage = new LoginFirstPage(driver);
@@ -73,21 +68,21 @@ public class SearchProviderTest {
     }
 
 //        读取CSV
-        public Iterator<Object[]> readCsvFile(String path) throws Exception {
-            List<Object[]> dataArray = new ArrayList<Object[]>();
-            Reader in = new FileReader(path);
-            Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
-            for(CSVRecord record:records){
-                List<Object> rowList = new ArrayList();
-                Iterator i = record.iterator();
-                while(i.hasNext()){
-                    rowList.add(i.next());
-                }
-                Object[] rowArray = rowList.toArray();
-                dataArray.add(rowArray);
-            }
-            return dataArray.iterator();
-        }
+//        public Iterator<Object[]> readCsvFile(String path) throws Exception {
+//            List<Object[]> dataArray = new ArrayList<Object[]>();
+//            Reader in = new FileReader(path);
+//            Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
+//            for(CSVRecord record:records){
+//                List<Object> rowList = new ArrayList();
+//                Iterator i = record.iterator();
+//                while(i.hasNext()){
+//                    rowList.add(i.next());
+//                }
+//                Object[] rowArray = rowList.toArray();
+//                dataArray.add(rowArray);
+//            }
+//            return dataArray.iterator();
+//        }
 
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="methods" thread-count="3">
     <test verbose="1" preserve-order="true" name="/Users/liuzhe/Desktop/peixun/safari/seleniumDemo">
         <!--<groups>-->
         <!--<dependencies>-->
@@ -26,21 +26,13 @@
         <!--</groups>-->
 
         <classes>
-            <!--<class name="TestLogin.LoginTest">-->
-                <!--<methods>-->
-                    <!--<include name="testLogin"/>-->
-                    <!--<parameter name="name" value="张三"/>-->
-                    <!--<parameter name="password" value="123456"/>-->
-                    <!--<parameter name="expect" value="欢迎张三"/>-->
-                    <!--&lt;!&ndash;<exclude name=""></exclude>&ndash;&gt;-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="TestLogin.ShoppingsTest">-->
+            <class name="Banner_Test"> </class>
 
-            <!--</class>-->
-            <class name="testNGTest002">
+            <class name="Login_Test"> </class>
 
-            </class>
+            <class name="SearchTest"></class>
+
+
         </classes>
 
 
