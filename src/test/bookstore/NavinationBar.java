@@ -68,5 +68,12 @@ public class NavinationBar {
 
     }
 
+    //   点击我的按钮
+    public void clickButton6() {
+        my_webElement.click();
+        Reporter.log("点击我的button", true);
+
+    }
+
 
 }

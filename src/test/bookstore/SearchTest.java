@@ -50,6 +50,8 @@ public class SearchTest {
 
 
         List<String> assertMsg = new ArrayList<String>();
+//        System.out.printf(assertMsg.toString());
+
         int i = 1;
         for(String goods_desc : searchResultPage.returnGoodsname()) {
             System.err.println("正在校验第" + i++ + "条数据");
@@ -62,6 +64,8 @@ public class SearchTest {
         }
 
         if(!assertMsg.isEmpty()) {
+//          空则抛异常
+//            System.out.printf(assertMsg.toString());
             Assert.assertTrue(false, assertMsg.toString());
         }
 

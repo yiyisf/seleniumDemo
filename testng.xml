@@ -26,11 +26,11 @@
         <!--</groups>-->
 
         <classes>
-            <class name="Banner_Test"> </class>
+            <!--<class name="Banner_Test"> </class>-->
 
             <class name="Login_Test"> </class>
 
-            <class name="SearchTest"></class>
+            <class name="ManageBookstoreTest"></class>
 
 
         </classes>
