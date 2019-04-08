@@ -82,6 +82,7 @@ public class ManageBookstoreTest {
         driver.findElement(By.xpath("//*[@class='item has-icon'][2]")).click();
         selenuimUtils.switchWindouw(driver,2000,handles);
 
+
 //        WebDriverWait wait = new WebDriverWait(driver, 3000);
 //        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 //
