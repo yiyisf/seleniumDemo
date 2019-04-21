@@ -6,7 +6,7 @@
         <!--<dependencies>-->
         <!--<group name="" depends-on="">-->
         <!--<classes>-->
-        <!--<class name="TestLogin.LoginTest">-->
+        <!--<class name="TestLogin.com.liuzhe.testdemo.LoginTest">-->
         <!--<methods>-->
         <!--<include name="testLogin"></include>-->
         <!--<parameter name="name" value="张三"/>-->
@@ -28,16 +28,16 @@
         <classes>
             <!--<class name="Banner_Test"> </class>-->
 
-            <class name="Login_Test"> </class>
+            <class name="com.liuzhe.test.Login_Test"> </class>
 
-            <class name="ManageBookstoreTest"></class>
+            <class name="com.liuzhe.test.ManageBookstoreTest"></class>
 
 
         </classes>
 
 
         <!--<classes>-->
-            <!--<class name="TestLogin.LoginTest">-->
+            <!--<class name="TestLogin.com.liuzhe.testdemo.LoginTest">-->
                 <!--<methods>-->
                     <!--<include name="testLogin">-->
                         <!--<parameter name="name" value="name"/>-->
@@ -54,7 +54,7 @@
 
 
         <!--<classes>-->
-        <!--<class name="DemoXunit.LoginTest">-->
+        <!--<class name="DemoXunit.com.liuzhe.testdemo.LoginTest">-->
         <!--<methods>-->
         <!--<include name="testLogin"/>-->
         <!--</methods>-->

@@ -3,8 +3,8 @@
     <test name="Test"  parallel= "classes" thread-count="5">
 
         <classes>
-            <class name="testNGTest001"/>
-            <class name="testNGTest002"/>
+            <class name="com.liuzhe.testdemo.testNGTest001"/>
+            <class name="com.liuzhe.testdemo.testNGTest002"/>
         </classes>
     </test> <!-- Test -->
 </suite>
