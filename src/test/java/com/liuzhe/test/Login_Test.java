@@ -2,12 +2,17 @@ package com.liuzhe.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.io.File;
 
 import static java.lang.System.out;
 
@@ -23,7 +28,19 @@ public class Login_Test {
     @BeforeMethod
     private void setup() {
         //启动chrome浏览器
-        driver = new ChromeDriver();
+//        driver = new ChromeDriver();
+        //启动chrome浏览器
+        try {
+            ChromeDriverService service = new ChromeDriverService.Builder()
+                    .usingDriverExecutable(new File("/tmp/chromedriver"))
+                    .usingAnyFreePort()
+                    .build();
+            service.start();
+            driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+        } catch (Exception e) {
+            driver = new ChromeDriver();
+        }
+
 
     }
 
