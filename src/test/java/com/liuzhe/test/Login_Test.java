@@ -38,6 +38,7 @@ public class Login_Test {
             service.start();
             driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
         } catch (Exception e) {
+            System.out.println("init chrome driver error;");
             driver = new ChromeDriver();
         }
 
