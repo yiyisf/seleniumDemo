@@ -5,8 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -34,7 +32,7 @@ public class ManageBookstoreTest {
                 .usingAnyFreePort()
                 .build();
             service.start();
-            driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+            driver = new ChromeDriver(service);
         } catch (Exception e) {
             driver = new ChromeDriver();
         }
