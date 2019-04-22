@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test thread-count="5" name="seleniumDemo(failed)">
     <classes>
-      <class name="LoginTest">
+      <class name="com.liuzhe.testdemo.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="test"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- LoginTest -->
+      </class> <!-- com.liuzhe.testdemo.LoginTest -->
     </classes>
   </test> <!-- seleniumDemo(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
