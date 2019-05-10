@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 /**
  * Created by liuzhe on 2019/2/17.
  */
-public class baiduTest {
+public class GoogleTest {
     public static void main(String[] args) {
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface,
