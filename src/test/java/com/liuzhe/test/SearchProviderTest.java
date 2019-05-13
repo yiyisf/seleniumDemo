@@ -38,10 +38,7 @@ public class SearchProviderTest {
     @Test (dataProvider = "getData")
     private void searchTest(String s ) throws InterruptedException {
         //在浏览器输入地址
-
-
         driver.get("https://fxm5547.baobaobooks.com/");
-
 
 
         LoginFirstPage loginFirstPage = new LoginFirstPage(driver);
