@@ -28,7 +28,7 @@ public class SearchParameterTest {
     }
     @DataProvider
    public Object[][] getData(){
-       Object[][] o={{"鹅妈妈"},{"小猪"}};
+       Object[][] o={{"有试听 廖彩杏书单 英国进口 经典版鹅妈妈童谣合集 My Very First Mother Goose Pack 点读版【超大开本平装】"},{"小猪"}};
        return o;
 
    }
@@ -73,9 +73,17 @@ public class SearchParameterTest {
         }
 
 //      非空则抛异常
-        if(!assertMsg.isEmpty()) {
-            Assert.assertTrue(false, assertMsg.toString());
-        }
+//        if(!assertMsg.isEmpty()) {
+//        Assert.assertTrue(false, assertMsg.toString());
+//        }
+
+        /**
+         * assertMsg.isEmpty()为true,则提示成功；如果是false，则抛出异常
+         * @param condition
+         * @param message
+         */
+        Assert.assertTrue(assertMsg.isEmpty(), assertMsg.toString());
+//        }
 
 
 
