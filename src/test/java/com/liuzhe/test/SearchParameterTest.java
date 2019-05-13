@@ -72,6 +72,7 @@ public class SearchParameterTest {
             }
         }
 
+//      非空则抛异常
         if(!assertMsg.isEmpty()) {
             Assert.assertTrue(false, assertMsg.toString());
         }
