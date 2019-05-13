@@ -77,13 +77,14 @@ public class SearchParameterTest {
 //        Assert.assertTrue(false, assertMsg.toString());
 //        }
 
+
         /**
          * assertMsg.isEmpty()为true,则提示成功；如果是false，则抛出异常
          * @param condition
          * @param message
          */
         Assert.assertTrue(assertMsg.isEmpty(), assertMsg.toString());
-//        }
+
 
 
 
