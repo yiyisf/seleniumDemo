@@ -65,6 +65,13 @@
             <artifactId>commons-csv</artifactId>
             <version>1.6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.23</version>
+        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>AutoIt</groupId>-->
             <!--<artifactId>AutoItX4Java</artifactId>-->
