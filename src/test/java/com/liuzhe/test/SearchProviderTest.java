@@ -19,11 +19,18 @@ public class SearchProviderTest {
 
 
     WebDriver driver = null;
+    String url = "";
 
     @BeforeMethod
     private void setup() {
         //启动chrome浏览器
         driver = new ChromeDriver();
+
+        try {
+            url = fileUtils.readYmlFile(fileUtils.getPath("/config.yaml"), "url");
+        }catch(Exception e){
+
+        }
 
     }
     @DataProvider
@@ -38,7 +45,7 @@ public class SearchProviderTest {
     @Test (dataProvider = "getData")
     private void searchTest(String s ) throws InterruptedException {
         //在浏览器输入地址
-        driver.get("https://fxm5547.baobaobooks.com/");
+        driver.get(url);
 
 
         LoginFirstPage loginFirstPage = new LoginFirstPage(driver);
