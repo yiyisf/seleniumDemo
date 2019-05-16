@@ -1,5 +1,6 @@
 package com.liuzhe.test;
 
+import com.liuzhe.utils.DateUtils;
 import com.liuzhe.utils.fileUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +22,7 @@ public class Banner_Test {
 
     @BeforeMethod
     private void setup() {
+        System.err.printf("启动浏览器时间："+DateUtils.getTime());
         //启动chrome浏览器
         driver = new ChromeDriver();
 
