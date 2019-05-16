@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 /**
@@ -11,6 +12,10 @@ import org.testng.Reporter;
  */
 
 public class NavinationBar {
+
+    WebDriver driver;
+    WebDriverWait wait;
+    long time = 30;
 
     //    查找页面元素-用户名、密码、登录按钮
     @FindBy(xpath = "//*[@class='icon icon-footer4']")
@@ -31,6 +36,8 @@ public class NavinationBar {
 
     //  初始化PO
     public NavinationBar(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver,time);
         PageFactory.initElements(driver, this);
     }
 
