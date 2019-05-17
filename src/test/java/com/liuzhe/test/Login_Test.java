@@ -2,6 +2,7 @@ package com.liuzhe.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -20,10 +21,18 @@ public class Login_Test {
 
     WebDriver driver = null;
 
+
+
     @BeforeMethod
     private void setup() {
         //启动chrome浏览器
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
+        //启动chrome浏览器
+        driver = new ChromeDriver(options);
+
 //               //启动chrome浏览器
 //        try {
 //            ChromeDriverService service = new ChromeDriverService.Builder()

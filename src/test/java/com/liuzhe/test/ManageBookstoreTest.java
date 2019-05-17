@@ -92,7 +92,7 @@ public class ManageBookstoreTest {
 
 
         //点击管理童书馆
-        driver.findElement(By.xpath("//*[@class='item has-icon'][2]")).click();
+        driver.findElement(By.xpath("//*[@class='item has-icon'][3]")).click();
         selenuimUtils.switchWindouw(driver,2000,handles);
 
 
