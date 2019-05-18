@@ -2,7 +2,6 @@ package com.liuzhe.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -13,7 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.File;
+import java.net.URL;
 
 import static java.lang.System.out;
 
@@ -35,17 +34,18 @@ public class Login_Test {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless");
+        options.setBinary("");
         //启动chrome浏览器
 //        driver = new ChromeDriver(options);
 
                //启动chrome浏览器
         try {
-            ChromeDriverService service = new ChromeDriverService.Builder()
-                    .usingDriverExecutable(new File("/tmp/chromedriver"))
-                    .usingAnyFreePort()
-                    .build();
-            service.start();
-            driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+//            ChromeDriverService service = new ChromeDriverService.Builder()
+//                    .usingDriverExecutable(new File("/tmp/chromedriver"))
+//                    .usingAnyFreePort()
+//                    .build();
+//            service.start();
+            driver = new RemoteWebDriver(new URL("http://47.102.201.62:4444/wd/hub"), DesiredCapabilities.chrome());
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("init chrome driver error;");
