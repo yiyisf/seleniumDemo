@@ -4,6 +4,7 @@ import com.liuzhe.utils.selenuimUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -24,7 +25,11 @@ public class ManageBookstoreTest {
     @BeforeMethod
     private void setup(){
         //启动chrome浏览器
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
 //        try {
 //            ChromeDriverService service = new ChromeDriverService.Builder()
 //                .usingDriverExecutable(new File("/tmp/chromedriver"))
