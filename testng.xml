@@ -30,7 +30,7 @@
 
             <class name="com.liuzhe.test.Login_Test"> </class>
 
-            <class name="com.liuzhe.test.ManageBookstoreTest"></class>
+            <!--<class name="com.liuzhe.test.ManageBookstoreTest"></class>-->
 
 
         </classes>
