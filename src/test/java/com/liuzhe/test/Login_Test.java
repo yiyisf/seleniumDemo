@@ -32,7 +32,7 @@ public class Login_Test {
         //启动chrome浏览器
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-//        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless");
         options.setBinary("");
         //启动chrome浏览器
